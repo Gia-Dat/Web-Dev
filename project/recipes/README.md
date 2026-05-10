@@ -4,6 +4,7 @@ You will find __3 recipes__ you can do with the chicken which can help you impro
 * Baked Boneless Chicken Thighs
 * Tailgate Tandoori Chicken
 * Ratatouille Baked Chicken
+
 ![Baked Boneless Chicken Thighs](./images/baked-chicken-thighs.webp)
 ![Tailgate Tandoori Chicken](./images/tandoori.webp)
 ![Ratatouille Baked Chicken](./images/ratatouille.webp)

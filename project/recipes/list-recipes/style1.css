@@ -1,0 +1,38 @@
+body {
+    background-color: aquamarine;
+}
+
+h1 {
+    text-align: center;
+}
+
+.image {
+    width: 320px;
+    padding: 0px;
+    margin: 0px auto;
+}
+
+img {
+    width: 320px;
+    height: auto;
+}
+
+div {
+    width: 1600px;
+    background-color: antiquewhite;
+    margin: 8px auto;
+    padding: 8px;
+}
+
+strong {
+    display: inline-block;
+    background-color: coral;
+}
+
+.return {
+    text-align: center;
+    background-color: aliceblue;
+    width: 400px;
+    margin: 8px auto;
+    padding: 8px;
+}

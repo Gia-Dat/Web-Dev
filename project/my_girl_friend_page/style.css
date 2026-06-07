@@ -1,0 +1,150 @@
+.header,
+.footer {
+    background-color: #1F2937;
+    color: white;
+    font-family: sans-serif;
+}
+
+.header {
+    padding: 48px;
+}
+
+.subhead1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.subhead2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 8px;
+}
+
+.subhead3 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.subhead4 {
+    border-radius: 40%;
+}
+
+.logo {
+    font-size: 24px;
+    color: #F9FAF8;
+}
+
+.main-text {
+    font-size: 48px;
+    color: #F9FAF8;
+    font-weight: 900;
+}
+
+
+ul,
+.description {
+    font-size: 18px;
+    color: #E5E7EB;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    gap: 16px;
+}
+
+button {
+    background-color: #3882F6;
+}
+
+.button1 {
+    background: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    outline: none;
+}
+
+.button1:hover {
+    transform: scale(1.1);
+    transition: transform 0.2s ease;
+}
+
+.info-head {
+    font-size: 36px;
+    color: #1F2937;
+    font-weight: 900;
+    text-align: center;
+}
+
+.modes {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    font-size: 18px;
+    font-family: sans-serif;
+    flex: 1;
+    height: 210px;
+}
+
+.quote {
+    background-color: #E5E7EB;
+    font-size: 36px;
+    color: #1F2937;
+    font-weight: 300;
+    padding: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    height: 100px;
+}
+
+.author {
+    font-size: 18px;
+    font-weight: 700;
+    align-self: flex-end;
+}
+
+.subscribe {
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    padding: 24px;
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 8px;
+    font-family: sans-serif;
+    width: 70%;
+}
+
+.footer {
+    padding: 8px;
+    text-align: center;
+}
+
+button {
+    padding: 8px;
+    border-radius: 8px;
+    color: white;
+}

@@ -1,6 +1,3 @@
-let computerScore = 0
-let humanScore = 0
-
 function getComputerChoice() {
     let randNum = Math.random()
     if (randNum < 1 / 3) return "rock"
@@ -13,41 +10,41 @@ function getHumanChoice() {
     return userInput.toLowerCase()
 }
 
-function playRound(humanChoice, computerChoice) {
-    if (humanChoice === "rock") {
-        if (computerChoice === "scissors") {
-            humanScore += 1
-            return "You win! " + humanChoice + " beats " + computerChoice
-        } else if (computerChoice === "paper") {
-            computerScore += 1
-            return "You lose! " + computerChoice + " beats " + humanChoice
-        } else return "Draw"
-    }
-
-    if (humanChoice === "paper") {
-        if (computerChoice === "rock") {
-            humanScore += 1
-            return "You win! " + humanChoice + " beats " + computerChoice
-        } else if (computerChoice === "scissors") {
-            computerScore += 1
-            return "You lose! " + computerChoice + " beats " + humanChoice
-        } else return "Draw"
-    }
-
-    if (humanChoice === "scissors") {
-        if (computerChoice === "paper") {
-            humanScore += 1
-            return "You win! " + humanChoice + " beats " + computerChoice
-        } else if (computerChoice === "rock") {
-            computerScore += 1
-            return "You lose! " + computerChoice + " beats " + humanChoice
-        } else return "Draw"
-    }
-}
-
 function playGame() {
-    humanScore = 0
-    computerScore = 0
+    let computerScore = 0
+    let humanScore = 0
+
+    function playRound(humanChoice, computerChoice) {
+        if (humanChoice === "rock") {
+            if (computerChoice === "scissors") {
+                humanScore += 1
+                return "You win! " + humanChoice + " beats " + computerChoice
+            } else if (computerChoice === "paper") {
+                computerScore += 1
+                return "You lose! " + computerChoice + " beats " + humanChoice
+            } else return "Draw"
+        }
+
+        if (humanChoice === "paper") {
+            if (computerChoice === "rock") {
+                humanScore += 1
+                return "You win! " + humanChoice + " beats " + computerChoice
+            } else if (computerChoice === "scissors") {
+                computerScore += 1
+                return "You lose! " + computerChoice + " beats " + humanChoice
+            } else return "Draw"
+        }
+
+        if (humanChoice === "scissors") {
+            if (computerChoice === "paper") {
+                humanScore += 1
+                return "You win! " + humanChoice + " beats " + computerChoice
+            } else if (computerChoice === "rock") {
+                computerScore += 1
+                return "You lose! " + computerChoice + " beats " + humanChoice
+            } else return "Draw"
+        }
+    }
 
     for (let i = 1; i <= 5; i++) {
         let humanSelection = getHumanChoice();
@@ -57,7 +54,7 @@ function playGame() {
 
     if (humanScore < computerScore) return "Final: Computer Wins"
     if (humanScore > computerScore) return "Final: Human Wins"
-    return "Draw"
+    return "Final: Draw"
 }
 
 console.log(playGame());
